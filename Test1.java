@@ -1,28 +1,27 @@
- class First
+class Parent
 {
-void m1()
+void surname()
 {
-System.out.println("m1 method in first class");
+System.out.println("k");
 }
-void m2()
+void designation()
 {
-System.out.println("m2 method in first class");
+System.out.println("clerk");
 }
 }
-class Second extends First
+class Child extends Parent
 {
-void m3()
+void designation()
 {
-System.out.println("m3 method in second class");
+System.out.println("java programmer");
 }
 }
 class Test
 {
-public static void main(String agrs[])
+public static void main(String args[])
 {
-Second s1=new Second();
-s1.m1();
-
+Child c1=new Child();
+c1.surname();
+c1.designation();
 }
-
 }
